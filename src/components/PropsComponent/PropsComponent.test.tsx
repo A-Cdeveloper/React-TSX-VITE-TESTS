@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import PropsComponent from './PropsComponent';
 import { describe } from 'vitest';
+import PropsComponent from './PropsComponent';
 
 describe('Component with props', () => {
   test('render header corractly', () => {
