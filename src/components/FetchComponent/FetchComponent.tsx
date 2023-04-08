@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { UserType } from '../../types/AppTypes';
 
-const FetchComponent = () => {
+function FetchComponent() {
   const [users, setUsers] = useState<UserType[]>([]);
   const [loadUsers, setLoadUsers] = useState(false);
 
@@ -15,8 +15,12 @@ const FetchComponent = () => {
   return (
     <div className="section">
       <h1>Fetch Component</h1>
-      <button onClick={fetchUsersHandler}>Fetch Users</button>
-      <button onClick={() => setLoadUsers(false)}>Clear Users</button>
+      <button type="button" onClick={fetchUsersHandler}>
+        Fetch Users
+      </button>
+      <button type="button" onClick={() => setLoadUsers(false)}>
+        Clear Users
+      </button>
       {users && loadUsers && (
         <ul>
           {users.map((user) => {
@@ -32,6 +36,6 @@ const FetchComponent = () => {
       )}
     </div>
   );
-};
+}
 
 export default FetchComponent;

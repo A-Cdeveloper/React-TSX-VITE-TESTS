@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, test, vi } from 'vitest';
-import InteractionComponent from './InteractionComponent';
 import userEvent from '@testing-library/user-event';
+import InteractionComponent from './InteractionComponent';
 
 describe('Interaction user action component', () => {
   test('render component corractly', () => {
@@ -35,6 +35,7 @@ describe('Interaction user action component', () => {
     const deleteHandler = vi.fn();
     await deleteHandler();
     const deleteButton = screen.queryByRole('button', { name: 'DELETE' });
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     deleteButton && (await userEvent.click(deleteButton));
     expect(deleteHandler).toHaveBeenCalledTimes(1);
     const teamsList = screen.queryAllByRole('listitem');
