@@ -22,6 +22,10 @@ const userSlice = createSlice({
   name: 'users',
   initialState,
   reducers: {
+    addUser: (state, { payload }) => {
+      // eslint-disable-next-line no-param-reassign
+      state.usersList = [payload, ...state.usersList];
+    },
     removeUser: (state, { payload }) => {
       // eslint-disable-next-line no-param-reassign
       state.usersList = state.usersList.filter((user) => user.id !== payload);
@@ -36,4 +40,4 @@ const userSlice = createSlice({
 
 export default userSlice.reducer;
 export const selectUsers = (state: RootState) => state.users.usersList;
-export const { removeUser } = userSlice.actions;
+export const { addUser, removeUser } = userSlice.actions;

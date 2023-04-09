@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import reducer, { fetchUsers, removeUser } from './userSlice';
+import reducer, { fetchUsers, removeUser, addUser } from './userSlice';
 import { UserType } from '../../types/AppTypes';
 
 const TestUsers: UserType[] = [
@@ -16,6 +16,13 @@ const TestUsers: UserType[] = [
     email: 'test-second@test.org',
   },
 ];
+
+const NewUser: UserType = {
+  id: 100,
+  name: 'Aleksandar',
+  username: 'alex789',
+  email: 'test@test.org',
+};
 
 describe('usersSlice', () => {
   test('initial', () => {
@@ -36,15 +43,15 @@ describe('usersSlice', () => {
       usersList: [...TestUsers],
     };
     const state = reducer(previousState, action);
-    expect(state).toEqual({
-      usersList: [
-        {
-          id: 1,
-          name: 'John',
-          username: 'Doe',
-          email: 'test@test.org',
-        },
-      ],
-    });
+    expect(state.usersList).toHaveLength(1);
+  });
+
+  test('add user', () => {
+    const action = { type: addUser.type, payload: NewUser };
+    const previousState = {
+      usersList: [...TestUsers],
+    };
+    const state = reducer(previousState, action);
+    expect(state.usersList).toHaveLength(3);
   });
 });

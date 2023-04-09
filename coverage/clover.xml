@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1680965740288" clover="3.2.0">
-  <project timestamp="1680965740288" name="All files">
-    <metrics statements="333" coveredstatements="329" conditionals="35" coveredconditionals="35" methods="27" coveredmethods="21" elements="395" coveredelements="385" complexity="0" loc="333" ncloc="333" packages="8" files="10" classes="10"/>
+<coverage generated="1681058449756" clover="3.2.0">
+  <project timestamp="1681058449756" name="All files">
+    <metrics statements="373" coveredstatements="365" conditionals="41" coveredconditionals="41" methods="35" coveredmethods="25" elements="449" coveredelements="431" complexity="0" loc="373" ncloc="373" packages="10" files="12" classes="12"/>
     <package name="components.FetchComponent">
       <metrics statements="41" coveredstatements="41" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
       <file name="FetchComponent.tsx" path="C:\xamp\_CLASSROOM\__TESTS-PROJECTS\03_REACT_TESTING\TESTING-TUT-EXAMPLE\src\components\FetchComponent\FetchComponent.tsx">
@@ -292,7 +292,7 @@
       </file>
     </package>
     <package name="store.context">
-      <metrics statements="89" coveredstatements="89" conditionals="13" coveredconditionals="13" methods="14" coveredmethods="10"/>
+      <metrics statements="84" coveredstatements="84" conditionals="13" coveredconditionals="13" methods="14" coveredmethods="10"/>
       <file name="data-context.tsx" path="C:\xamp\_CLASSROOM\__TESTS-PROJECTS\03_REACT_TESTING\TESTING-TUT-EXAMPLE\src\store\context\data-context.tsx">
         <metrics statements="37" coveredstatements="37" conditionals="5" coveredconditionals="5" methods="7" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
@@ -334,7 +334,7 @@
         <line num="37" count="2" type="cond" truecount="1" falsecount="0"/>
       </file>
       <file name="teams-context.tsx" path="C:\xamp\_CLASSROOM\__TESTS-PROJECTS\03_REACT_TESTING\TESTING-TUT-EXAMPLE\src\store\context\teams-context.tsx">
-        <metrics statements="52" coveredstatements="52" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="5"/>
+        <metrics statements="47" coveredstatements="47" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -352,41 +352,93 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="5" type="stmt"/>
+        <line num="25" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="45" count="5" type="stmt"/>
+        <line num="46" count="5" type="stmt"/>
+        <line num="47" count="3" type="cond" truecount="1" falsecount="0"/>
+      </file>
+    </package>
+    <package name="store.redux">
+      <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="4"/>
+      <file name="userSlice.ts" path="C:\xamp\_CLASSROOM\__TESTS-PROJECTS\03_REACT_TESTING\TESTING-TUT-EXAMPLE\src\store\redux\userSlice.ts">
+        <metrics statements="39" coveredstatements="39" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="5" type="stmt"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
-        <line num="39" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="40" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="41" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="44" count="5" type="stmt"/>
-        <line num="45" count="5" type="stmt"/>
-        <line num="46" count="5" type="stmt"/>
-        <line num="47" count="5" type="stmt"/>
-        <line num="48" count="5" type="stmt"/>
-        <line num="49" count="5" type="stmt"/>
-        <line num="50" count="5" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
-        <line num="52" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="0"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="users.ts" path="C:\xamp\_CLASSROOM\__TESTS-PROJECTS\03_REACT_TESTING\TESTING-TUT-EXAMPLE\src\utils\users.ts">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
       </file>
     </package>
   </project>
