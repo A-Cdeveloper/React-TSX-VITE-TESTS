@@ -6,11 +6,13 @@ import {
   selectUsers,
   fetchUsers,
 } from '../../store/redux/userSlice';
+import { selectPosts, fetchPosts } from '../../store/redux/postsSlice';
 
 let init = true;
 
 const ReduxComponent = () => {
   const usersRdx = useAppSelector(selectUsers);
+  const postsRdx = useAppSelector(selectPosts);
   const dispatch = useAppDispatch();
 
   const addUserHandler = () => {
@@ -31,6 +33,7 @@ const ReduxComponent = () => {
   useEffect(() => {
     if (init) {
       dispatch(fetchUsers());
+      dispatch(fetchPosts());
     }
     init = false;
   }, [dispatch]);
@@ -67,22 +70,21 @@ const ReduxComponent = () => {
 
         <div className="part">
           <h2>Posts</h2>
-          <hr />
+          {/* <hr />
           <button type="button"> Add New Post</button>
-          <hr />
+          <hr /> */}
           <ul>
-            {usersRdx.slice(0, 5).map((user) => {
+            {postsRdx.slice(0, 5).map((post) => {
               return (
-                <li key={user.id}>
-                  <h3>{user.name}</h3>
-                  <p>{user.username}</p>
-                  <p>{user.email}</p>
-                  <button
+                <li key={post.id}>
+                  <h3>{post.title}</h3>
+                  <p>{post.body}</p>
+                  {/* <button
                     type="button"
-                    onClick={() => removeUserHandler(user.id)}
+                    onClick={() => removeUserHandler(post.id)}
                   >
                     REMOVE
-                  </button>
+                  </button> */}
                 </li>
               );
             })}

@@ -5,9 +5,12 @@ import {
 } from '@reduxjs/toolkit';
 // eslint-disable-next-line import/no-cycle
 import usersReducer from './userSlice';
+// eslint-disable-next-line import/no-cycle
+import postsReducer from './postsSlice';
 
 const rootReducer = combineReducers({
   users: usersReducer,
+  posts: postsReducer,
 });
 
 export const setupStore = (preloadedState?: PreloadedState<RootState>) =>
